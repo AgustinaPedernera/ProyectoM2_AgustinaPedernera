@@ -1,0 +1,24 @@
+{
+  "name": "miniblog-api",
+  "version": "1.0.0",
+  "description": "REST API for managing authors and posts",
+  "main": "src/server.js",
+  "author": "Agustina Pedernera",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.23.0",
+    "swagger-ui-express": "^5.0.1",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2"
+  }
+}
