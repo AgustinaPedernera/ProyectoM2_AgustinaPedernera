@@ -9,3 +9,4 @@ VALUES (1, 'Mi primer post sobre Ciencias Jurídicas', '¿Qué es el derecho adm
        (2, 'Mi primer post sobre Desarrollo Web', '¿Qué significa DevFullStack?', true),
        (3, 'Mi primer post sobre Análisis de Sistemas', '¿Qué es un diagrama de flujo?', true);
 
+SET client_encoding TO 'UTF8';
