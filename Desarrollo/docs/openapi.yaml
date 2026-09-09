@@ -6,9 +6,12 @@ info:
   description: API REST para gestionar autores y publicaciones de MiniBlog.
 
 servers:
+  - url: https://proyectom2agustinapedernera-production-ab0e.up.railway.app
+    description: Servidor de producción
+
   - url: http://localhost:3000
     description: Servidor local
-
+    
 security: []
 
 paths:

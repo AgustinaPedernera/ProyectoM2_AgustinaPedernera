@@ -52,8 +52,8 @@ El proyecto permite gestionar autores y publicaciones mediante operaciones CRUD,
 
 7. Iniciar el servidor:
 
-   ```bash
-   node src/server.js
+  ```bash
+npm start
    ```
 
 La API estará disponible localmente en:
@@ -111,6 +111,18 @@ Para validar la documentación:
 npx @redocly/cli lint docs/openapi.yaml
 ```
 
+La documentación también puede consultarse mediante Swagger UI.
+
+### Swagger UI local
+
+Con el servidor en ejecución:
+
+`http://localhost:3000/docs`
+
+### Swagger UI en producción
+
+`https://proyectom2agustinapedernera-production-ab0e.up.railway.app/docs`
+
 ## Estructura del proyecto
 
 ```text
@@ -134,6 +146,7 @@ ProyectoM2_AgustinaPedernera/
     └── seed.sql
 ```
 
+
 ## Uso de Inteligencia Artificial
 
 Durante el desarrollo del proyecto se utilizó ChatGPT como herramienta de apoyo para comprender conceptos, resolver errores y revisar la implementación.
@@ -153,9 +166,23 @@ Las funcionalidades fueron implementadas y probadas durante el desarrollo utiliz
 
 ## Deploy
 
-La API será desplegada en Railway.
+La API se encuentra desplegada en Railway.
 
-La URL pública del proyecto se agregará en esta sección una vez finalizado el despliegue.
+URL pública:
+
+`https://proyectom2agustinapedernera-production-ab0e.up.railway.app`
+
+El despliegue utiliza dos servicios dentro de Railway:
+
+- La aplicación Node.js y Express, desplegada desde el repositorio de GitHub.
+- Una base de datos PostgreSQL utilizada para almacenar autores y publicaciones.
+
+La aplicación utiliza la variable de entorno `DATABASE_URL` para conectarse a PostgreSQL en producción.
+
+Debido a que el backend se encuentra dentro de la carpeta `Desarrollo`, esta carpeta fue configurada como Root Directory del servicio en Railway.
+
+La base de datos de producción fue inicializada utilizando los scripts `setup.sql` y `seed.sql`.
+
+Se verificó el funcionamiento de los endpoints `/authors` y `/posts`, así como la documentación Swagger disponible en `/docs`.
 
 La documentación detallada del uso de IA y las evidencias del proceso se encuentran en [Documentacion/uso-ia.md](Documentacion/uso-ia.md).
-
