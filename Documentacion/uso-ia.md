@@ -56,10 +56,13 @@ La documentación OpenAPI fue validada correctamente.
 
 Se utilizó IA para organizar el README, documentar la instalación y ejecución del proyecto y preparar la aplicación para su despliegue.
 
-La sección correspondiente al despliegue se completará una vez finalizada la publicación de la API en Railway.
+La API fue desplegada en Railway junto con una base de datos PostgreSQL. Durante este proceso se recibió orientación para configurar la carpeta `Desarrollo` como Root Directory, conectar la aplicación con PostgreSQL mediante la variable de entorno `DATABASE_URL` e inicializar la base de datos de producción utilizando los archivos `setup.sql` y `seed.sql`.
 
+Finalmente se verificó el funcionamiento de la API desplegada mediante los endpoints `/authors` y `/posts`, y se comprobó el acceso a la documentación OpenAPI mediante Swagger UI.
+
+![Swagger UI en producción](capturas/07-swagger-ui.jpeg)
 ---
 
 ## Conclusión
 
-ChatGPT se utilizó principalmente como herramienta de aprendizaje, revisión y resolución de dudas durante el desarrollo. Las funcionalidades fueron implementadas y probadas durante el proceso antes de incorporarlas al proyecto final.
+Las herramientas de IA se utilizaron principalmente como apoyo para el aprendizaje, la revisión y la resolución de dudas durante el desarrollo. Las funcionalidades fueron implementadas y probadas durante el proceso antes de incorporarlas al proyecto final.
